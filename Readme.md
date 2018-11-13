@@ -1,7 +1,7 @@
-# Личный проект «Седона»
+﻿# Личный проект «Седона»
 
 * Студент: [Elena Abilova](https://up.htmlacademy.ru/htmlcss/23/user/391741).
-* Наставник: `Неизвестно`.
+* Наставник: `Дима Найт; id512127; https://htmlacademy.ru/profile/id512127`.
 
 ---
 
