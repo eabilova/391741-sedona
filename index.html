@@ -5,32 +5,37 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header>
+    <header class="menu">
       <nav>
        <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Прайс-лист</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="Hotels.html">Гостиницы</a></li>
+        <li>
+          <a href="#">Информация</a>
+        </li>
+        <li>
+          <a href="#">Фото и видео</a>
+        </li>
+        <li>
+          <a href="#">Карта штата</a>
+        </li>
+        <li>
+          <a href="Hotels.html">Гостиницы</a>
+        </li>
        </ul>
-      <a href=""><img src="img/logo.png" alt="Sedona"></a>
+      <a href="#">
+        <img src="logo" alt="Sedona"></a>
       </nav>
     </header>
-    <section>
-        <p>Welcome</p>
-        <p>_ to the georgeus -</p>
-        <p>Sedona</p>
-        <p>Because the Grand Canyon sucks!</p>
-        <p style="text-align: center;">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+    <main>
+    <section class="intro">
+        <h2>Седона - небольшой городок в Аризоне,заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
-      <section>
-        <h2 style="text-align: center;">Заинтересовались?</h2>
-        <p style="text-align: center;">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <div>
-          <h3>Поиск гостиницы в Седоне</h3>
-          <label for="arrival">Дата заезда:
+      <section class="appliance">
+        <h3>Заинтересовались?</h3>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <div class="booking" type="button">
+        <p>Поиск гостиницы в Седоне</p>
+            <label for="arrival">Дата заезда:
             <input type="date" id="arrival" name="arrival">
           </label><br>
           <label for="departure">Дата выезда:
@@ -40,19 +45,26 @@
           <input type="number" min="1" max="3" id="adult" step="1" name="adult">
           <label for="child">Дети:</label>
           <input type="number" min="1" max="3" id="child" step="1" name="child"><br>
-          <input type="submit" value="Отправить">
-        </div>
+          <input type="submit" value="Найти">
+          </div>
       </section>
-      <footer>
+    </main>
+      <footer class="contacts">
 <p><a href="#">#VisitSedona</a></p>
-<div>
-  <ul>
-    <li><a href="Twitter">Twitter</a></li>
-    <li><a href="Facebook">Facebook</a></li>
-    <li><a href="YouTube">YouTube</a></li>
+  <ul class="social">
+    <li>
+      <a href="#">Twitter</a>
+    </li>
+    <li>
+      <a href="#">Facebook</a>
+    </li>
+    <li>
+      <a href="#">YouTube</a>
+    </li>
   </ul>
-</div>
-<div><img src="bloglogo"></div>
+<div>
+  <p>Website by</p>
+  <img src="bloglogo"></div>
       </footer>
   </body>
 </html>
