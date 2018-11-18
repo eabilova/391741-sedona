@@ -5,9 +5,9 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="menu">
+    <header class="header-menu">
       <nav>
-       <ul>
+       <ul class="header-menu_list">
         <li>
           <a href="#">Информация</a>
         </li>
@@ -18,40 +18,42 @@
           <a href="#">Карта штата</a>
         </li>
         <li>
-          <a href="Hotels.html">Гостиницы</a>
+          <a href="inner.html">Гостиницы</a>
         </li>
        </ul>
-      <a href="#">
-        <img src="logo" alt="Sedona"></a>
+        <img class="header-menu_logo" src="logo" alt="Sedona">
+      </a>
       </nav>
     </header>
     <main>
-    <section class="intro">
+    <section class="intro-text">
         <h2>Седона - небольшой городок в Аризоне,заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
-      <section class="appliance">
+      <section class="booking-text">
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <div class="booking" type="button">
+      <div class="booking-form">
+        <button type="button" class="booking-form_button">
         <p>Поиск гостиницы в Седоне</p>
+        </button>
             <label for="arrival">Дата заезда:
-            <input type="date" id="arrival" name="arrival">
+            <input type="date" id="arrival" name="arrival" class="booking-form_selector">
           </label><br>
           <label for="departure">Дата выезда:
-              <input type="date" id="departure" name="departure">
+              <input type="date" id="departure" name="departure" class="booking-form_selector">
             </label><br>
             <label for="adult">Взрослые:</label>
-          <input type="number" min="1" max="3" id="adult" step="1" name="adult">
+          <input type="number" min="1" max="3" id="adult" step="1" name="adult" class="booking-form_selector">
           <label for="child">Дети:</label>
-          <input type="number" min="1" max="3" id="child" step="1" name="child"><br>
+          <input type="number" min="1" max="3" id="child" step="1" name="child" class="booking-form_selector"><br>
           <input type="submit" value="Найти">
           </div>
       </section>
     </main>
-      <footer class="contacts">
-<p><a href="#">#VisitSedona</a></p>
-  <ul class="social">
+      <footer class="contact-list">
+<a href="#">#VisitSedona</a>
+  <ul class="contact-list_social">
     <li>
       <a href="#">Twitter</a>
     </li>
@@ -62,8 +64,8 @@
       <a href="#">YouTube</a>
     </li>
   </ul>
-<div>
-  <p>Website by</p>
+<div class="contact-list_logo">
+  Website by
   <img src="bloglogo"></div>
       </footer>
   </body>

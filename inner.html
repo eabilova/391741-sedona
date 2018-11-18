@@ -5,61 +5,68 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="menu">
+    <header class="header-menu">
       <nav>
-       <ul>
+       <ul class="header-menu_list">
         <li>
-          <a href=#>Информация</a>
+          <a href="#">Информация</a>
         </li>
         <li>
-          <a href=#>Фото и видео</a>
+          <a href="#">Фото и видео</a>
         </li>
         <li>
-          <a href=#>Карта штата</a>
+          <a href="#">Карта штата</a>
         </li>
         <li>
-          <a href=#>Гостиницы</a>
+          <a href="#">Гостиницы</a>
         </li>
        </ul>
       <a href="index.html">
-        <img src="logo" alt="Sedona"></a>
+        <img class="header-menu_logo" src="logo" alt="Sedona">
+      </a>
       </nav>
     </header>
     <main>
-    <section class="hotellist">
-      <ul>
-      <li>
-        <h4>Amara Resort & Spa</h4>
+    <section class="hotel">
+      <ul class="hotel-list">
+      <li class="hotel-list_item">
+        <h3>Amara Resort & Spa</h3>
         <img src="#">
         <p>Гостиница</p>
         <p>от 4000р.</p>
-        <div>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-         </div>
+        <ul class="hotel-list_rating">
+          <li>&#10032;</li>
+          <li>&#10032;</li>
+          <li>&#10032;</li>
+          <li>&#10032;</li>
+      </ul>
         <p>Рейтинг: 8,5</p>
         <a href="#">Подробнее</a>
         <a href="#">Забронировать</a>
         </li>
-      <li>
-        <h4>Desert Quail Inn</h4>
+      <li class="hotel-list_item">
+        <h3>Desert Quail Inn</h3>
         <img src="#">
         <p>Мотель</p>
         <p>от 3000р.</p>
-        <div>
-            <span>☆</span><span>☆</span><span>☆</span>
-         </div>
+        <ul class="hotel-list_rating">
+          <li>&#10032;</li>
+          <li>&#10032;</li>
+          <li>&#10032;</li>
+      </ul>
         <p>Рейтинг: 8,9</p>
         <a href="#">Подробнее</a>
         <a href="#">Забронировать</a>
         </li>
-      <li>
-        <h4>Villas At Poco Diablo</h4>
+      <li class="hotel-list_item">
+        <h3>Villas At Poco Diablo</h3>
         <img src="#">
         <p>Аппартаменты</p>
         <p>от 2000р.</p>
-        <div>
-            <span>☆</span><span>☆</span>
-         </div>
+        <ul class="hotel-list-rating">
+          <li>&#10032;</li>
+          <li>&#10032;</li>
+        </ul>
         <p>Рейтинг: 9,2</p>
         <a href="#">Подробнее</a>
         <a href="#">Забронировать</a>
@@ -67,9 +74,9 @@
       </ul>
     </section>
   </main>
-    <footer class="contacts">
-        <p><a href="#">#VisitSedona</a></p>
-          <ul class="social">
+    <footer class="contact-list">
+        <a href="#">#VisitSedona</a>
+          <ul class="contact-list_social">
             <li>
               <a href="#">Twitter</a>
             </li>
@@ -80,8 +87,8 @@
               <a href="#">YouTube</a>
             </li>
           </ul>
-        <div>
-     <p>Website by</p>
+        <div class="contact-list_logo">
+     Website by
     <img src="bloglogo"></div>
 </footer>>
   </body>
