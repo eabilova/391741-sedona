@@ -5,68 +5,64 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="header-menu">
-      <nav>
-       <ul class="header-menu_list">
-        <li>
-          <a href="#">Информация</a>
+    <header class="header">
+      <nav class="menu">
+       <ul class="menu-list">
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="#">Информация</a>
         </li>
-        <li>
-          <a href="#">Фото и видео</a>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="#">Фото и видео</a>
         </li>
-        <li>
-          <a href="#">Карта штата</a>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="#">Карта штата</a>
         </li>
-        <li>
-          <a href="inner.html">Гостиницы</a>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="inner.html">Гостиницы</a>
         </li>
        </ul>
-        <img class="header-menu_logo" src="logo" alt="Sedona">
-      </a>
+        <img class="logo-image" src="logo" alt="Sedona">
       </nav>
     </header>
-    <main>
-    <section class="intro-text">
-        <h2>Седона - небольшой городок в Аризоне,заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      </section>
-      <section class="booking-text">
-        <h3>Заинтересовались?</h3>
-        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <div class="booking-form">
-        <button type="button" class="booking-form_button">
-        <p>Поиск гостиницы в Седоне</p>
-        </button>
-            <label for="arrival">Дата заезда:
-            <input type="date" id="arrival" name="arrival" class="booking-form_selector">
-          </label><br>
-          <label for="departure">Дата выезда:
-              <input type="date" id="departure" name="departure" class="booking-form_selector">
-            </label><br>
-            <label for="adult">Взрослые:</label>
-          <input type="number" min="1" max="3" id="adult" step="1" name="adult" class="booking-form_selector">
-          <label for="child">Дети:</label>
-          <input type="number" min="1" max="3" id="child" step="1" name="child" class="booking-form_selector"><br>
-          <input type="submit" value="Найти">
-          </div>
+    <main class="main">
+    <section class="intro">
+        <h2 class="intro__title">Седона - небольшой городок в Аризоне,заслуживающий большего!</h2>
+        <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    </section>
+    <section class="search">
+     <h3 class="search__title">Заинтересовались?</h3>
+     <p class="search__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+     <button type="button" class="booking-button">Поиск гостиницы в Седоне</button>
+     <form class="search__search-form search-form">
+       <label class="search-form__label" for="arrival">Дата заезда:
+       <input class="search-form__input search-form__input_date" type="date" id="arrival" name="arrival">
+       </label><br>
+       <label class="search-form__label" for="departure">Дата выезда:
+       <input class="search-form__input search-form__input_date" type="date" id="departure" name="departure">
+       <label class="search-form__label" for="adult">Взрослые:</label>
+       <input class="search-form__input search-form__input_number" type="number" min="1" max="3" id="adult" step="1" name="adult">
+       <label class="search-form__label" for="child">Дети:</label>
+       <input class="search-form__input search-form__input_number" type="number" min="1" max="3" id="child" step="1" name="child"><br>
+       <input class="search-form__input search-form__input_submit" type="submit" value="Найти">
+       </form>
       </section>
     </main>
-      <footer class="contact-list">
-<a href="#">#VisitSedona</a>
-  <ul class="contact-list_social">
-    <li>
-      <a href="#">Twitter</a>
+      <footer class="contacts">
+<a class="visit-link" href="#">#VisitSedona</a>
+  <ul class="social-list">
+    <li class="social-list__item">
+      <a class="social-list__link" href="#">Twitter</a>
     </li>
-    <li>
-      <a href="#">Facebook</a>
+    <li class="social-list__item">
+      <a class="social-list__link" href="#">Facebook</a>
     </li>
-    <li>
-      <a href="#">YouTube</a>
+    <li class="social-list__item">
+      <a class="social-list__link" href="#">YouTube</a>
     </li>
   </ul>
-<div class="contact-list_logo">
+<div class="devs-logo">
   Website by
-  <img src="bloglogo"></div>
+  <img class="devs-logo__image" src="bloglogo"></div>
       </footer>
   </body>
 </html>

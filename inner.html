@@ -5,91 +5,91 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="header-menu">
-      <nav>
-       <ul class="header-menu_list">
-        <li>
-          <a href="#">Информация</a>
+    <header class="header">
+      <nav class="menu">
+       <ul class="menu-list">
+        <li class="menu-list__item">
+         <a class="menu-list__link" href="#">Информация</a>
         </li>
-        <li>
-          <a href="#">Фото и видео</a>
+        <li class="menu-list__item">
+         <a class="menu-list__link" href="#">Фото и видео</a>
         </li>
-        <li>
-          <a href="#">Карта штата</a>
+        <li class="menu-list__item">
+         <a class="menu-list__link" href="#">Карта штата</a>
         </li>
-        <li>
-          <a href="#">Гостиницы</a>
+        <li class="menu-list__item">
+         <a class="menu-list__link" href="inner.html">Гостиницы</a>
         </li>
        </ul>
-      <a href="index.html">
-        <img class="header-menu_logo" src="logo" alt="Sedona">
+      <a class="index-link" href="index.html">
+         <img class="logo-image" src="logo" alt="Sedona">
       </a>
       </nav>
     </header>
-    <main>
+    <main class="hotel-main">
     <section class="hotel">
       <ul class="hotel-list">
-      <li class="hotel-list_item">
-        <h3>Amara Resort & Spa</h3>
-        <img src="#">
-        <p>Гостиница</p>
-        <p>от 4000р.</p>
-        <ul class="hotel-list_rating">
-          <li>&#10032;</li>
-          <li>&#10032;</li>
-          <li>&#10032;</li>
-          <li>&#10032;</li>
+      <li class="hotel-list__item">
+        <h3 class="hotel-list__item hotel-list__item_name">Amara Resort & Spa</h3>
+        <img class="hotel-list__item hotel-list__item_image" src="#">
+        <p class="hotel-list__item hotel-list__item_type">Гостиница</p>
+        <p class="hotel-list__item hotel-list__item_price">от 4000р.</p>
+        <ul class="hotel-list__rating-list rating-list">
+          <li class="rating-list__item">&#10032;</li>
+          <li class="rating-list__item">&#10032;</li>
+          <li class="rating-list__item">&#10032;</li>
+          <li class="rating-list__item">&#10032;</li>
       </ul>
-        <p>Рейтинг: 8,5</p>
-        <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
+        <p class="hotel-list__rating">Рейтинг: 8,5</p>
+        <a class="hotel-list__link" href="#">Подробнее</a>
+        <a class="hotel-list__booking hotel-list__booking_link" href="#">Забронировать</a>
         </li>
-      <li class="hotel-list_item">
-        <h3>Desert Quail Inn</h3>
-        <img src="#">
-        <p>Мотель</p>
-        <p>от 3000р.</p>
-        <ul class="hotel-list_rating">
-          <li>&#10032;</li>
-          <li>&#10032;</li>
-          <li>&#10032;</li>
+      <li class="hotel-list__item">
+        <h3 class="hotel-list__item hotel-list__item_name">Desert Quail Inn</h3>
+        <img class="hotel-list__item hotel-list__item_image" src="#">
+        <p class="hotel-list__item hotel-list__item_type">Мотель</p>
+        <p class="hotel-list__item hotel-list__item_price">от 3000р.</p>
+        <ul class="hotel-list__rating-list rating-list">
+          <li class="rating-list__item">&#10032;</li>
+          <li class="rating-list__item">&#10032;</li>
+          <li class="rating-list__item">&#10032;</li>
       </ul>
-        <p>Рейтинг: 8,9</p>
-        <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
+        <p class="hotel-list__rating">Рейтинг: 8,9</p>
+        <a class="hotel-list__link" href="#">Подробнее</a>
+        <a class="hotel-list__booking hotel-list__booking_link" href="#">Забронировать</a>
         </li>
-      <li class="hotel-list_item">
-        <h3>Villas At Poco Diablo</h3>
-        <img src="#">
-        <p>Аппартаменты</p>
-        <p>от 2000р.</p>
-        <ul class="hotel-list-rating">
-          <li>&#10032;</li>
-          <li>&#10032;</li>
+      <li class="hotel-list__item">
+        <h3 class="hotel-list__item hotel-list__item_name">Villas At Poco Diablo</h3>
+        <img class="hotel-list__item hotel-list__item_image" src="#">
+        <p class="hotel-list__item hotel-list__item_type">Аппартаменты</p>
+        <p class="hotel-list__item hotel-list__item_price">от 2000р.</p>
+        <ul class="hotel-list__rating-list rating-list">
+          <li class="rating-list__item">&#10032;</li>
+          <li class="rating-list__item">&#10032;</li>
         </ul>
-        <p>Рейтинг: 9,2</p>
-        <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
+        <p class="hotel-list__rating">Рейтинг: 9,2</p>
+        <a class="hotel-list__link" href="#">Подробнее</a>
+        <a class="hotel-list__booking hotel-list__booking_link" href="#">Забронировать</a>
         </li>
       </ul>
     </section>
   </main>
-    <footer class="contact-list">
-        <a href="#">#VisitSedona</a>
-          <ul class="contact-list_social">
-            <li>
-              <a href="#">Twitter</a>
-            </li>
-            <li>
-              <a href="#">Facebook</a>
-            </li>
-            <li>
-              <a href="#">YouTube</a>
-            </li>
-          </ul>
-        <div class="contact-list_logo">
-     Website by
-    <img src="bloglogo"></div>
-</footer>>
+  <footer class="contacts">
+      <a class="visit-link" href="#">#VisitSedona</a>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">Twitter</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">Facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">YouTube</a>
+          </li>
+        </ul>
+      <div class="devs-logo">
+        Website by
+        <img class="devs-logo__image" src="bloglogo"></div>
+  </footer>
   </body>
 </html>
