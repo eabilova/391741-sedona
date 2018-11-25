@@ -7,64 +7,83 @@
   <body>
     <header class="page-header">
       <nav class="menu">
-       <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link" href="#">Информация</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Фото и видео</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Карта штата</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="inner.html">Гостиницы</a>
-        </li>
-       </ul>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Информация</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Фото и видео</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Карта штата</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="inner.html">Гостиницы</a>
+          </li>
+        </ul>
       </nav>
-        <img class="page-header__logo" src="img/logo_sedona.svg" width="138" height="70" alt="Sedona">
-     </header>
+      <img class="page-header__logo" src="img/logo_sedona.svg" width="138" height="70" alt="Sedona">
+    </header>
     <main class="page-main">
-    <section class="intro">
-      <img class="intro__img" src="img/header_welcome.svg" alt="Welcome to the georgeous Sedona Because the Grand Canyon sucks!">
+      <section class="intro">
+        <img class="intro__img" src="img/header_welcome.svg" alt="Welcome to the georgeous Sedona Because the Grand Canyon sucks!">
         <h2 class="intro__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-    </section>
-    <section class="search">
-     <h3 class="search__title">Заинтересовались?</h3>
-     <p class="search__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-     <button class="search__button" type="button">Поиск гостиницы в Седоне</button>
-     <form class="search__search-form search-form" method="get">
-       <label class="search-form__label" for="arrival">Дата заезда:
-       <input class="search-form__input search-form__input_date" type="date" id="arrival" name="arrival">
-       </label>
-       <label class="search-form__label" for="departure">Дата выезда:
-       <input class="search-form__input search-form__input_date" type="date" id="departure" name="departure">
-       <label class="search-form__label" for="adult">Взрослые:</label>
-       <input class="search-form__input search-form__input_number" type="number" min="1" max="3" id="adult" step="1" name="adult">
-       <label class="search-form__label" for="child">Дети:</label>
-       <input class="search-form__input search-form__input_number" type="number" min="1" max="3" id="child" step="1" name="child"><br>
-       <input class="search-form__input search-form__input_submit" type="submit" value="Найти">
-       </form>
+      </section>
+      <section class="search">
+        <h3 class="search__title">Заинтересовались?</h3>
+        <p class="search__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="search__button" type="button">Поиск гостиницы в Седоне</button>
+        <form class="search__search-form search-form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="search-form__fieldset_full-width">
+            <label class="search-form__label" for="arrival">Дата заезда:</label>
+            <input class="search-form__input search-form__input_date" type="date" id="arrival" name="arrival">
+          </fieldset>
+          <fieldset class="search-form__fieldset_full-width">
+            <label class="search-form__label" for="departure">Дата выезда:</label>
+            <input class="search-form__input search-form__input_date" type="date" id="departure" name="departure">
+          </fieldset>
+          <filedset class="search-form__fieldset_half-width">
+            <label class="search-form__label" for="adult">Взрослые:</label>
+            <button class="search-form__minus">-</button>
+            <input class="search-form__input search-form__input_number" type="number" min="1" max="3" id="adult" step="1" name="adult">
+            <button class="search-form__plus">+</button>
+          </filedset>
+          <filedset class="search-form__fieldset_half-width">
+            <label class="search-form__label" for="child">Дети:</label>
+            <button class="search-form__minus">-</button>
+            <input class="search-form__input search-form__input_number" type="number" min="1" max="3" id="child" step="1" name="child">
+            <button class="search-form__plus">+</button>
+          </filedset>
+          <input class="search-form__input search-form__input_submit" type="submit" value="Найти">
+        </form>
       </section>
     </main>
-      <footer class="page-footer">
- <p class="page-footer__hashtag">#VisitSedona</p>
-  <ul class="page-footer__social-list social-list">
-    <li class="social-list__item">
-      <a class="social-list__link" href="#"><span class="visually-hidden">Twitter</span></a>
-    </li>
-    <li class="social-list__item">
-      <a class="social-list__link" href="#"><span class="visually-hidden">Facebook</span></a>
-    </li>
-    <li class="social-list__item">
-      <a class="social-list__link" href="#"><span class="visually-hidden">YouTube</span></a>
-    </li>
-  </ul>
-<div class="page-footer__copyright">
-  Website by <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="page-footer__copyright-img" src="img/logo_htmlacademy.svg" width="70" height="23 alt="HTML Academy"></a>
-</div>
-      </footer>
+    <footer class="page-footer">
+      <p class="page-footer__hashtag">#VisitSedona</p>
+      <ul class="page-footer__social-list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        Website by <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="page-footer__copyright-img" src="img/logo_htmlacademy.svg" width="70" height="23 alt="HTML Academy">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
 
