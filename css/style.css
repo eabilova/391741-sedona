@@ -12,14 +12,19 @@ body {
   background-color: #ffffff;
 }
 
-.intro {
+.page-main {
   background-image: url("../img/background_index-header.jpg");
   background-color: #ffffff;
-  background-position: top center;
+  background-size: 1200px 800px;
+  background-position: top center relative;
   background-repeat: no-repeat;
 }
 
 .intro__img {
-  position: top center;
-  width: 20px;
+  position: relative;
+  top: 132px;
+  left: 370px;
+  right: 371px;
+  width: 459px;
+  height: 353px;
 }
