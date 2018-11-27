@@ -12,19 +12,179 @@ body {
   background-color: #ffffff;
 }
 
-.page-main {
+.menu__link {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.menu__link:hover {
+  color: #81b3d2;
+}
+
+.menu__link:active {
+  color: #c1c1c1;
+}
+
+.intro {
   background-image: url("../img/background_index-header.jpg");
   background-color: #ffffff;
-  background-size: 1200px 800px;
-  background-position: top center relative;
-  background-repeat: no-repeat;
 }
 
 .intro__img {
-  position: relative;
-  top: 132px;
-  left: 370px;
-  right: 371px;
-  width: 459px;
-  height: 353px;
+  background-color: #ffffff;
+}
+
+.intro__title {
+  background-color: #ffffff;
+}
+
+.intro__description {
+  background-color: #ffffff;
+}
+
+.search__title{
+  background-color: #ffffff;
+}
+
+.search__description{
+  background-color: #ffffff;
+}
+
+.search__button{
+  color: #bcbcbc;
+  background-color: #766357;
+}
+
+.search__button:hover {
+  color: #ffffff;
+  background-color: #604e43;
+}
+
+.search__button:active {
+  color: #717171;
+  background-color: #503e33;
+}
+
+.search-form__input_date {
+  background-color: #f2f2f2;
+}
+
+.search-form__input_date:hover {
+  background-color: #ebebeb;
+}
+
+.search-form__input_date:focus {
+  background-color: #ffffff;
+}
+
+.search-form__minus {
+  color: #a9a9a9;
+  background-color:  #ffffff;
+}
+
+.search-form__minus:hover {
+  color: #000000;
+  background-color:  #ffffff;
+}
+
+.search-form__minus:active {
+  color: #81b3d2;
+  background-color:  #ffffff;
+}
+
+.search-form__input_number {
+  background-color: #f2f2f2;
+}
+
+.search-form__input_number:hover {
+  background-color: #ebebeb;
+}
+
+.search-form__input_number:focus{
+  background-color: #ffffff;
+}
+
+.search-form__plus {
+  color: #a9a9a9;
+  background-color:  #ffffff;
+}
+
+.search-form__plus:hover {
+  color: #000000;
+  background-color:  #ffffff;
+}
+
+.search-form__plus:active {
+  color: #81b3d2;
+  background-color:  #ffffff;
+}
+
+.search-form__input_submit {
+  color: #bcbcbc;
+  background-color: #81b3d2;
+}
+
+.search-form__input_submit:hover {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.search-form__input_submit:active {
+  color: #d1d1d1;
+  background-color: #5496bd;
+}
+
+.page-footer__copyright-link {
+  color: #202020;
+}
+
+.page-footer__copyright-link:hover {
+  color: #d2d2d2;
+}
+
+.page-footer__copyright-link:active {
+  color: #c4c4c4;
+}
+
+.hotel-item__link {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.hotel-item__link:hover {
+  color: #81b3d2;
+}
+
+.hotel-item__link:active {
+  color: #c1c1c1;
+}
+
+.hotel-item__button_more {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.hotel-item__button_more:hover {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.hotel-item__button_more:active {
+  color: #7aadcb;
+  background-color: #5496bd;
+}
+
+.hotel-item__button_booking {
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.hotel-item__button_booking:hover {
+  color: #ffffff;
+  background-color: #604e43;
+}
+
+.hotel-item__button_booking:active {
+  color: #766860;
+  background-color: #503e33;
 }
