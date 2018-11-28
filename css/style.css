@@ -4,12 +4,18 @@ body {
 
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
 
   background-color: #ffffff;
+}
+
+.menu__item{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700px;
 }
 
 .menu__link {
@@ -30,28 +36,36 @@ body {
   background-color: #ffffff;
 }
 
-.intro__img {
-  background-color: #ffffff;
-}
-
 .intro__title {
-  background-color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700px;
 }
 
 .intro__description {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.search {
   background-color: #ffffff;
 }
 
-.search__title{
-  background-color: #ffffff;
+.search__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700px;
 }
 
 .search__description{
-  background-color: #ffffff;
+  line-height: 24px;
 }
 
 .search__button{
-  color: #bcbcbc;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700px;
+  color: #ffffff;
   background-color: #766357;
 }
 
@@ -63,6 +77,11 @@ body {
 .search__button:active {
   color: #717171;
   background-color: #503e33;
+}
+
+.search__search-form{
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .search-form__input_date {
@@ -77,17 +96,17 @@ body {
   background-color: #ffffff;
 }
 
-.search-form__minus {
+.search-form__num-button {
   color: #a9a9a9;
   background-color:  #ffffff;
 }
 
-.search-form__minus:hover {
+.search-form__num-button:hover {
   color: #000000;
   background-color:  #ffffff;
 }
 
-.search-form__minus:active {
+.search-form__num-button:active {
   color: #81b3d2;
   background-color:  #ffffff;
 }
@@ -104,22 +123,9 @@ body {
   background-color: #ffffff;
 }
 
-.search-form__plus {
-  color: #a9a9a9;
-  background-color:  #ffffff;
-}
-
-.search-form__plus:hover {
-  color: #000000;
-  background-color:  #ffffff;
-}
-
-.search-form__plus:active {
-  color: #81b3d2;
-  background-color:  #ffffff;
-}
-
 .search-form__input_submit {
+  font-size: 21px;
+  font-weight: 700px;
   color: #bcbcbc;
   background-color: #81b3d2;
 }
@@ -132,6 +138,25 @@ body {
 .search-form__input_submit:active {
   color: #d1d1d1;
   background-color: #5496bd;
+}
+
+.page-footer {
+  line-height: 26px;
+}
+
+.page-footer__hashtag {
+  font-size: 21px;
+  font-weight: 700px;
+  color: #000000;
+}
+
+.social-list__item {
+  font-size: 14px;
+}
+
+.page-footer__copyright{
+  font-size: 21px;
+  color: #000000;
 }
 
 .page-footer__copyright-link {
@@ -147,6 +172,9 @@ body {
 }
 
 .hotel-item__link {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700px;
   color: #000000;
   background-color: #ffffff;
 }
