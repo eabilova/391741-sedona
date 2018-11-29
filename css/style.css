@@ -12,13 +12,10 @@ body {
   background-color: #ffffff;
 }
 
-.menu__list{
+.menu__link {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-}
-
-.menu__link {
   color: #000000;
   background-color: #ffffff;
 }
