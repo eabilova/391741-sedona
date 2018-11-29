@@ -12,10 +12,10 @@ body {
   background-color: #ffffff;
 }
 
-.menu__item{
+.menu__list{
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 .menu__link {
@@ -39,7 +39,7 @@ body {
 .intro__title {
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 .intro__description {
@@ -54,7 +54,7 @@ body {
 .search__title {
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 .search__description{
@@ -64,7 +64,7 @@ body {
 .search__button{
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700px;
+  font-weight: 700;
   color: #ffffff;
   background-color: #766357;
 }
@@ -125,7 +125,7 @@ body {
 
 .search-form__input_submit {
   font-size: 21px;
-  font-weight: 700px;
+  font-weight: 700;
   color: #bcbcbc;
   background-color: #81b3d2;
 }
@@ -146,7 +146,7 @@ body {
 
 .page-footer__hashtag {
   font-size: 21px;
-  font-weight: 700px;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -174,7 +174,7 @@ body {
 .hotel-item__link {
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700px;
+  font-weight: 700;
   color: #000000;
   background-color: #ffffff;
 }
