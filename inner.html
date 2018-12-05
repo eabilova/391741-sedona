@@ -28,6 +28,51 @@
       </a>
     </header>
     <main class="page-main">
+      <section class="filter">
+        <fieldset class="filter__field">
+          <legend class="filter__name">Инфраструктура:</legend>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <input class="filter__input filter__input_checkbox" type="checkbox" name="pool" id="pool" checked>
+              <label class="filter__label" for="pool">Бассейн</label>
+            </li>
+            <li class="filter__item">
+              <input class="filter__input filter__input_checkbox" type="checkbox" name="parking" id="parking">
+              <label class="filter__label" for="parking">Парковка</label>
+            </li>
+            <li class="filter__item">
+              <input class="filter__input filter__input_checkbox" type="checkbox" name="wifi" id="wifi">
+              <label class="filter__label" for="wifi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__field">
+          <legend class="filter__name">Тип Жилья:</legend>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <input class="filter__input filter__input_checkbox" type="checkbox" name="hotel" id="hotel" checked>
+              <label class="filter__label" for="hotel">Отель</label>
+            </li>
+            <li class="filter__item">
+              <input class="filter__input filter__input_checkbox" type="checkbox" name="motel" id="motel" checked>
+              <label class="filter__label" for="motel">Мотель</label>
+            </li>
+            <li class="filter__item">
+              <input class="filter__input filter__input_checkbox" type="checkbox" name="apartments" id="apartments" checked>
+              <label class="filter__label" for="apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__field">
+          <legend class="filter__name">Стоимость в сутки (Р):</legend>
+          <div class="filter__range">
+            <div class="filter__range filter__range_min">от 0</div>
+            <div class="filter__range filter__range_max">до 3000</div>
+          </div>
+          <input class="filter__input filter__input_range" type="range" name="cost" id="cost" min="0" max="3000" step="100">
+          <input class="filter__input filter__input_submit" type="submit" value="Показать">
+        </fieldset>
+      </section>
       <section class="hotels-result">
         <ul class="hotel-list">
           <li class="hotel-item">
