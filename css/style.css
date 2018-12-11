@@ -118,19 +118,19 @@ body {
 
 .features__item_full-width {
   display: flex;
+  align-items: center;
 }
 
 .features__item {
   width: 400px;
-  height: 258px;
   flex-grow: 1;
   background-color: #ffffff;
   text-align: center;
 }
 
 .features__text-block {
-  height: 258px;
   width: 400px;
+  padding: 45px 0;
   background-color: #81b3d2;
 }
 
@@ -151,7 +151,6 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 15px;
-  height: 256px;
   text-align: center;
   list-style: none;
  }
@@ -316,25 +315,25 @@ body {
 }
 
 .social-list__item {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  width: 46px;
-  height: 48px;
-  margin-right: 10px;
+  width: 47px;
+  height: 50px;
+  margin-right: 6px;
   background-color: #81b3d2;
 }
 
-.social-list__icon {
-  padding-right: 13px;
-  padding-left: 13px;
-  padding-top: 14px;
+.page-footer__copyright{
+  display: flex;
+  align-items: center;
 }
 
-.page-footer__copyright{
-  font-size: 21px;
+.page-footer__copyright-text{
+  font-size: 14px;
   color: #000000;
+  margin-right: 5px;
 }
 
 .page-footer__copyright-link {
@@ -347,6 +346,10 @@ body {
 
 .page-footer__copyright-link:active {
   color: #c4c4c4;
+}
+
+.page-footer__copyright-img {
+  padding-top: 8px;
 }
 
 .filter {
@@ -400,21 +403,28 @@ body {
 
 .hotel-item__container {
   display: flex;
-  padding: 36px 0 35px 74px;
+  padding: 30px 0 30px 74px;
 }
 
 .hotel-item__container-info {
   display: block;
 }
 
+.hotel-item__img {
+  width: 135px;
+  height: 90px;
+}
+
 .hotel-item__link {
-  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   margin-left: 30px;
   color: #000000;
   background-color: #ffffff;
+  text-decoration: none;
 }
 
 .hotel-item__link:hover {
@@ -427,17 +437,19 @@ body {
 
 .hotel-item__container-buttons,
 .hotel-item__container-price {
+  padding: 0;
   display: flex;
   margin-left: 30px;
+  position: relative;
 }
 
-.hotel-item__type,
 .hotel-item__price {
-  margin-right: 42px;
+  position: absolute;
+  margin-left: 118px;
 }
 
 .hotel-item__button {
-  height: 25px;
+  margin: 0;
   padding: 5px 15px;
   font-weight: 700;
   margin-right: 10px;

@@ -45,7 +45,7 @@
                   <p class="features__text features__text_white">Седона - не аттракцион для туристов,<br> там течёт своя жизнь</p>
                </div>
                <div class="features__image-block">
-                  <img class="features__image" src="img/feature_house.jpg">
+                  <img class="features__image" src="img/feature_house.jpg" alt="Дом">
                </div>
             </div>
             <ul class="features__inner-list">
@@ -66,7 +66,7 @@
          <section class="features">
             <div class="features__item features__item_full-width">
                <div class="features__image-block">
-                  <img class="features__image" src="img/feature_panorama.jpg">
+                  <img class="features__image" src="img/feature_panorama.jpg" alt="Панорама">
                </div>
                <div class="features__text-block">
                   <h3 class="features__title features__title_white">Там есть<br> мост дьявола</h3>
@@ -78,17 +78,17 @@
                <li class="features__item">
                   <h3 class="features__box-title">Небольшая<br>площадь</h3>
                   <h4 class="features__box-subtitle">- №3 -</h4>
-                  <p class="features__description">Все достопримечательности находятся очень близко</p>
+                  <p class="features__description">Все достопримечательности<br>находятся очень близко</p>
                </li>
                <li class="features__item">
                   <h3 class="features__box-title">Красивая<br>дорога</h3>
                   <h4 class="features__box-subtitle">- №4 -</h4>
-                  <p class="features__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                  <p class="features__description">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
                </li>
                <li class="features__item">
                   <h3 class="features__box-title">Мало<br>туристов</h3>
                   <h4 class="features__box-subtitle">- №5 -</h4>
-                  <p class="features__description">Большинство едет в Гранд Каньон и толпится там</p>
+                  <p class="features__description">Большинство едет в Гранд Каньон<br>и толпится там</p>
                </li>
             </ul>
          </section>
@@ -105,23 +105,25 @@
                   <label class="search-form__label" for="departure">Дата выезда:</label>
                   <input class="search-form__input search-form__input_date" type="date" id="departure" name="departure">
                </fieldset>
-               <filedset class="search-form__fieldset search-form__fieldset_half-width">
+               <fieldset class="search-form__fieldset search-form__fieldset_half-width">
                   <label class="search-form__label" for="adult">Взрослые:</label>
                   <button class="search-form__num-button">-</button>
                   <input class="search-form__input search-form__input_number" type="number" min="1" max="3" id="adult" step="1" name="adult">
                   <button class="search-form__num-button">+</button>
-               </filedset>
-               <filedset class="search-form__fieldset search-form__fieldset_half-width">
+               </fieldset>
+               <fieldset class="search-form__fieldset search-form__fieldset_half-width">
                   <label class="search-form__label" for="child">Дети:</label>
                   <button class="search-form__num-button">-</button>
                   <input class="search-form__input search-form__input_number" type="number" min="1" max="3" id="child" step="1" name="child">
                   <button class="search-form__num-button">+</button>
-               </filedset>
+               </fieldset>
                <input class="search-form__input search-form__input_submit" type="submit" value="Найти">
             </form>
          </section>
          <section class="location">
-            <div class="location__map" href="#"></div>
+            <div class="location__map">
+              <a class="location__link" href="#"></a>
+            </div>
          </section>
       </main>
       <footer class="page-footer center">
@@ -147,8 +149,9 @@
             </li>
          </ul>
          <div class="page-footer__copyright">
-            Website by <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img class="page-footer__copyright-img" src="img/logo_htmlacademy.svg" width="70" height="23" alt="HTML Academy">
+            <p class="page-footer__copyright-text">Website by</p>
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="page-footer__copyright-img" src="img/logo_htmlacademy.svg" width="115" height="41" alt="HTML Academy">
             </a>
          </div>
       </footer>
