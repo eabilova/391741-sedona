@@ -31,29 +31,25 @@ body {
   list-style: none;
 }
 
-.menu__item {
-  width: 239px;
-}
-
 .menu__link {
   display: inline-block;
+  width: 239px;
   margin: inherit;
-  line-height: 26px;
-  padding: 15px 0;
+  padding: 14px 0;
   text-align: center;
   font-weight: 700;
-  margin-left: 73px;
+  line-height: 26px;
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
 }
 
 .menu__item:nth-of-type(2) {
-  margin-right: 52px;
+  margin-right: 58px;
 }
 
 .menu__item:nth-of-type(3) {
-  margin-left: 52px;
+  margin-left: 58px;
 }
 
 .menu__link:hover {
@@ -66,11 +62,10 @@ body {
 
 .page-header__logo {
   display: inline-block;
-  width: 244px;
   position: absolute;
   top: 0px;
   left: 50%;
-  margin-left: -122px;
+  margin-left: -70px;
   z-index: 2;
 }
 
@@ -80,30 +75,38 @@ body {
   height: 508px;
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-position: 0 -56px;
+  background-position: 0 -58px;
   z-index: 0;
 }
 
 .intro__img {
-  position: absolute;
   width: 459px;
   height: 353px;
-  left: 50%;
-  margin-left: -229px;
-  top: 75px;
+  padding: 0 370px;
+  margin-top: 75px;
+}
+
+.intro__mask {
+  background-image: url("../img/background_polygon-white-index.svg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 59px;
+  z-index: 4;
 }
 
 .intro-text {
-  margin: 0;
+  background-image: url("../img/background_rect-white-index.svg");
+  background-repeat: no-repeat;
+  margin: 0 auto;
   padding: 0;
-  text-align: center;
-  background-color: #ffffff;
 }
 
 .intro-text__title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-align: center;
+  width: 600px;
 }
 
 .intro-text__description {
@@ -293,6 +296,7 @@ body {
 }
 
 .page-footer__hashtag {
+  text-align: center;
   font-size: 21px;
   font-weight: 700;
   color: #000000;
@@ -326,6 +330,7 @@ body {
 
 .page-footer__copyright{
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -439,12 +444,11 @@ body {
   padding: 0;
   display: flex;
   margin-left: 30px;
-  position: relative;
 }
 
+.hotel-item__type,
 .hotel-item__price {
-  position: absolute;
-  margin-left: 118px;
+  width: 118px;
 }
 
 .hotel-item__button {
