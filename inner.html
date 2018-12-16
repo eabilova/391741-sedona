@@ -10,17 +10,19 @@
 <body>
   <header class="page-header center">
     <nav class="menu">
-      <ul class="menu__list">
+      <ul class="menu__list-one">
         <li class="menu__item">
           <a class="menu__link" href="#">Информация</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="#">Фото и видео</a>
         </li>
+      </ul>
+      <ul class="menu__list-two">
         <li class="menu__item">
           <a class="menu__link" href="#">Карта штата</a>
         </li>
-        <li class="menu__item menu__link">Гостиницы</li>
+        <li class="menu__item menu__link active">Гостиницы</li>
       </ul>
     </nav>
     <a class="page-header__logo-link" href="index.html">
@@ -51,7 +53,7 @@
         <ul class="filter__list">
           <li class="filter__item">
             <input class="filter__input filter__input_checkbox" type="checkbox" name="hotel" id="hotel" checked>
-            <label class="filter__label" for="hotel">Отель</label>
+            <label class="filter__label" for="hotel">Гостиница</label>
           </li>
           <li class="filter__item">
             <input class="filter__input filter__input_checkbox" type="checkbox" name="motel" id="motel" checked>
@@ -73,6 +75,31 @@
         <input class="filter__input filter__input_submit" type="submit" value="Показать">
       </fieldset>
     </section>
+    <section class="sorting">
+      <div class="sorting__result">
+        <p class="sorting__result sorting__result_title">Найдено: 3</p>
+      </div>
+      <div class="sorting__container">
+        <p class="sorting__title">Сортировка:</p>
+        <ul class="sorting__list">
+          <li class="sorting__item">
+            <a class="sorting__link" href="#" active>по цене</a>
+          </li>
+          <li class="sorting__item">
+            <a class="sorting__link">по типу</a>
+          </li>
+          <li class="sorting__item">
+            <a class="sorting__link">по рейтингу</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sorting__view">
+        <span class="sorting__ascending visually-hidden">По возрастанию</span>
+        <img class="sorting__ascending_arrow" src="img/icon_up-dir.svg" alt="По возрастанию">
+        <span class="sorting__descending visually-hidden">По убыванию</span>
+        <img class="sorting__descending_arrow" src="img/icon_down-dir.svg" alt="По убыванию">
+      </div>
+    </section>
     <section class="hotels-list">
       <div class="hotel-item">
         <div class="hotel-item__container">
@@ -92,16 +119,16 @@
         <div class="hotel-item__container-aside">
           <ul class="hotel-item__rating-list">
             <li class="hotel-item__rating-item">
-              <img class="hotel-item__rating-star" src="img/icon_star.svg" width="15" height="14" alt="4 stars">
+              <img class="hotel-item__rating-star" src="img/icon_star.svg" alt="4 stars">
             </li>
             <li class="hotel-item__rating-item">
-              <img class="hotel-item__rating-star" src="img/icon_star.svg" width="15" height="14" alt="">
+              <img class="hotel-item__rating-star" src="img/icon_star.svg" alt="">
             </li>
             <li class="hotel-item__rating-item">
-              <img class="hotel-item__rating-star" src="img/icon_star.svg" width="15" height="14" alt="">
+              <img class="hotel-item__rating-star" src="img/icon_star.svg" alt="">
             </li>
             <li class="hotel-item__rating-item">
-              <img class="hotel-item__rating-star" src="img/icon_star.svg" width="15" height="14" alt="">
+              <img class="hotel-item__rating-star" src="img/icon_star.svg" alt="">
             </li>
           </ul>
           <p class="hotel-item__rating">Рейтинг: 8,5</p>
@@ -125,13 +152,13 @@
         <div class="hotel-item__container-aside">
           <ul class="hotel-item__rating-list">
             <li class="hotel-item__rating-item">
-              <img class="hotel-item__rating-star" src="img/icon_star.svg" width="15" height="14" alt="3 stars">
+              <img class="hotel-item__rating-star" src="img/icon_star.svg" alt="3 stars">
             </li>
             <li class="hotel-item__rating-item">
-              <img class="hotel-item__rating-star" src="img/icon_star.svg" width="15" height="14" alt="">
+              <img class="hotel-item__rating-star" src="img/icon_star.svg" alt="">
             </li>
             <li class="hotel-item__rating-item">
-              <img class="hotel-item__rating-star" src="img/icon_star.svg" width="15" height="14" alt="">
+              <img class="hotel-item__rating-star" src="img/icon_star.svg"  alt="">
             </li>
           </ul>
           <p class="hotel-item__rating">Рейтинг: 8,9</p>
@@ -155,10 +182,10 @@
         <div class="hotel-item__container-aside">
           <ul class="hotel-item__rating-list">
             <li class="hotel-item__rating-item">
-              <img class="hotel-item__rating-star" src="img/icon_star.svg" width="15" height="14" alt="2 stars">
+              <img class="hotel-item__rating-star" src="img/icon_star.svg" alt="2 stars">
             </li>
             <li class="hotel-item__rating-item">
-              <img class="hotel-item__rating-star" src="img/icon_star.svg" width="15" height="14" alt="">
+              <img class="hotel-item__rating-star" src="img/icon_star.svg" alt="">
             </li>
           </ul>
           <p class="hotel-item__rating">Рейтинг: 9,2</p>
