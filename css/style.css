@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
@@ -12,7 +12,6 @@ body {
 
 .center {
   width: 1200px;
-  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -124,7 +123,7 @@ body {
   width: 1200px;
   height: 59px;
   z-index: 4;
-  margin-bottom: -2px;
+  margin-bottom: -3px;
 }
 
 .intro-text {
@@ -380,6 +379,10 @@ body {
 }
 
 .search-form__input_date {
+  background-image: url(../img/icon_calendar.svg);
+  background-repeat: no-repeat;
+  background-position: 311px center;
+  fill: #e5e5e5;
   width: 326px;
   background-color: #f2f2f2;
 }
@@ -457,7 +460,7 @@ body {
   justify-content: space-between;
   align-items: center;
   line-height: 26px;
-  padding: 28px 0;
+  padding: 26px 0;
   background-color: #ffffff;
 }
 
@@ -531,16 +534,17 @@ body {
 .filter {
   display: flex;
   justify-content: space-between;
+  margin:  0;
   color: #ffffff;
-  padding: 28px 74px 8px;
-  background: url("../img/background_inner-header.jpg") 2px no-repeat;
+  padding: 28px 72px 8px;
+  background: url("../img/background_inner-header.jpg") 0 no-repeat;
 }
 
 .filter__group {
   display: flex;
   margin: 0;
   padding: 0;
-  width: 300px;
+  width: 330px;
   border: none;
 }
 
@@ -604,18 +608,85 @@ body {
 }
 
 .filter__range{
+  position: relative;
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
+  font-size: 0;
   width: 316px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  margin-bottom: 20px;
 }
 
-.filter__range_min,
-.filter__range_max {
-  padding: 6px 51px;
-  border: 1px solid #ffffff;
-  margin-bottom: 14px;
+.filter__range::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.filter__range .filter__label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: top;
+  width: 90px;
+  padding-left: 65px;
+  cursor: pointer;
+}
+
+.filter__range .filter__range_min-price,
+.filter__range .filter__range_max-price {
+  margin: 0;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 8px 0;
+}
+
+.filter__range_min-price,
+.filter__range_max-price{
+  width: 60px;
+}
+
+.filter__controls {
+  position: relative;
+  margin-bottom: 33px;
+}
+
+.filter__controls .filter__controls-scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.filter__controls .filter__controls-bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
 }
 
 .filter__input_range {
@@ -627,11 +698,11 @@ body {
 
 .filter__input_submit{
   width: 134px;
-  padding: 8px;
+  padding: 9px;
   text-transform: uppercase;
   color: #ffffff;
   margin: 0;
-  margin-left: 88px;
+  margin-left: 86px;
   background-color: transparent;
   border: 1px solid #ffffff;
 }
@@ -741,7 +812,7 @@ body {
   justify-content: space-between;
   width: 1200px;
   margin: 0;
-  border: 2px solid #e3e3e3;
+  border: 1px solid #e3e3e3;
   border-left: none;
   border-right: none;
 }
@@ -749,13 +820,14 @@ body {
 .hotel-item__container {
   display: flex;
   margin: 0;
-  padding: 25px 0 0 74px;
+  padding: 25px 0 0 73px;
 }
 
 .hotel-item__container-info {
   display: block;
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
 }
 
 .hotel-item__img {
