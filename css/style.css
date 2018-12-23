@@ -16,6 +16,14 @@ body {
   margin: 0 auto;
 }
 
+.page-header,
+.page-main,
+.page-footer {
+  box-shadow: 0 0 5px 0 #a9a9a9;
+}
+
+
+
 .page-header {
   width: 1200px;
   padding: 0;
@@ -361,6 +369,7 @@ body {
   width: 568px;
   margin-bottom: 31px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .search-form__fieldset_half-width {
@@ -395,37 +404,38 @@ body {
 }
 
 .search-form__input_date {
-  background-image: url(../img/icon_calendar.svg);
-  background-repeat: no-repeat;
-  background-position: 317px center;
-  fill: #e5e5e5;
   width: 350px;
   background-color: #f2f2f2;
 }
 
+.search-form__icon_calendar {
+  position: absolute;
+  right: 64px;
+  top: 7px;
+  fill: #a9a9a9;
+}
+
 .search-form__fieldset_half-width:nth-child(1) .search-form__label {
-  margin-right: 30px;
+  margin-right: 37px;
 }
 
 .search-form__fieldset_half-width:nth-child(2) .search-form__label {
-  margin-right: 30px;
+  margin-right: 29px;
+  margin-left: 11px;
 }
 
 .search-form__fieldset_half-width:nth-child(1) {
   margin-left: 18px;
 }
 
-.search-form__fieldset_half-width:nth-child(2) {
-  margin-left: 22px;
-}
-
+.search-form__input_number,
 .search-form__num-button {
   margin: 0;
   width: 38px;
-  padding: 6px 0;
-  font-size: 14px;
+  padding: 0 0 3px 0;
+  font-size: 25px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 32px;
   border: none;
   color: #a9a9a9;
   background-color:  #f2f2f2;
@@ -442,6 +452,10 @@ body {
 }
 
 .search-form__input_number {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 7px 0 2px 0;
   margin: 0 -4px;
   width: 38px;
   background-color: #f2f2f2;
