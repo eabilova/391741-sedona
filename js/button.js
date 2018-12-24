@@ -1,15 +1,14 @@
-window.onload = function() {
+window.addEventListener('load', function () {
 
-document.getElementById("search_form").style.display = "none";
+  document.getElementById("search_form").classList.add('hidden')
 
-};
+  var button = document.getElementById("search_button")
+  if (button) {
+    button.addEventListener('click', toggle_search_form)
+  }
 
-function search_form(a) {
+});
 
-if (a == 1) {
-  document.getElementById("search_form").style.display = "block";
-} else {
-  document.getElementById("search_form").style.display = "none";
-}
-
+function toggle_search_form() {
+  document.getElementById("search_form").classList.toggle('hidden')
 }
