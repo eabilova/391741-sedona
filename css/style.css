@@ -12,7 +12,7 @@ body {
 }
 
 .center {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .page-header {
-  width: 100%;
+  width: 1200px;
   padding: 0;
   margin: 0 auto;
   position: relative;
@@ -131,6 +131,7 @@ body {
   width: 1200px;
   height: 59px;
   z-index: 4;
+  margin: 0 auto;
   margin-bottom: -3px;
 }
 
@@ -138,7 +139,7 @@ body {
   padding: 0;
   margin: 0 auto;
   text-align: center;
-  width: 100%;
+  width: 1200px;
   background-color: #ffffff;
 }
 
@@ -160,13 +161,8 @@ body {
   padding-bottom: 51px;
 }
 
-.features {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .features__item {
-  flex: 0 1 33.34%;
+  width: 400px;
   margin: 0 auto;
   text-align: center;
   padding-top: 47px;
@@ -174,20 +170,19 @@ body {
 
 .features__item_full-width {
   display: flex;
-  width: 100%;
-  text-align: center;
+  width: 1200px;
   margin: 0 auto;
   padding-top:0;
 }
 
 .features__text-block {
-  flex: 0 1 33.33%;
+  max-width: 400px;
   padding: 48px;
   background-color: #81b3d2;
 }
 
 .features__image-block {
-  flex: 0 1 66.67%;
+  max-width: 800px;
   height: 256px;
 }
 
@@ -212,7 +207,7 @@ body {
 
 .features__inner-list {
   display: flex;
-  width: 100%;
+  width: 1200px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -280,6 +275,10 @@ body {
   margin: 0 auto;
   width: 261px;
   margin-bottom: 57px;
+}
+
+.features__item:last-child .features__description {
+  width: 251px;
 }
 
 .features__item:nth-child(1) .features__description:nth-of-type(1),
@@ -355,6 +354,7 @@ body {
   background-color: #ffffff;
 }
 
+
 .search-form__fieldset {
   width: 568px;
   border: none;
@@ -416,16 +416,16 @@ body {
 }
 
 .search-form__fieldset_half-width:nth-child(1) .search-form__label {
-  margin-right: 37px;
+  margin-right: 35px;
 }
 
 .search-form__fieldset_half-width:nth-child(2) .search-form__label {
-  margin-right: 29px;
-  margin-left: 11px;
+  margin-right: 25px;
+  margin-left: 15px;
 }
 
 .search-form__fieldset_half-width:nth-child(1) {
-  margin-left: 18px;
+  margin-left: 14px;
 }
 
 .search-form__input_number,
@@ -504,11 +504,9 @@ body {
 
 .page-footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  line-height: 26px;
-  padding: 24px 0 32px 0;
   background-color: rgba(255, 255, 255, 0.8);
+  width: 1200px;
 }
 
 .page-footer.main-footer {
@@ -523,20 +521,23 @@ body {
 }
 
 .page-footer__hashtag {
-  width:400px;
-  text-align: center;
+  max-width: 40%;
+  text-align: left;
   font-size: 21px;
   font-weight: 700;
   color: #000000;
+  margin-left: 132px;
+  padding: 28px 0 35px 0;
 }
 
 .page-footer__social-list {
-  width: 400px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  padding: 32px 0 35px 2px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
+  max-width: 20%;
 }
 
 .visually-hidden {
@@ -555,41 +556,55 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  width: 45px;
-  height: 47px;
-  padding-top: 10px;
+  width: 47px;
+  height: 48px;
+  padding-top: 5px;
   margin: 0 3px;
   background-color: #81b3d2;
   box-sizing: border-box;
 }
 
-.page-footer__copyright{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
+.social-list__icon:hover {
+  color: #669ec0;
 }
 
-.page-footer__copyright-text{
-  font-size: 14px;
-  color: #000000;
-  margin-right: 11px;
+.social-list__icon:active {
+  color: #5496bd;
+}
+
+.page-footer__copyright{
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  max-width: 40%;
+  padding: 0;
+  margin-right: 101px;
+  margin-bottom: 5px;
 }
 
 .page-footer__copyright-link {
-  color: #202020;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
+  fill: #202020;
 }
 
 .page-footer__copyright-link:hover {
-  color: #d2d2d2;
+  fill:#81b3d2;
 }
 
 .page-footer__copyright-link:active {
-  color: #c4c4c4;
+  fill: #bdbbbc;
 }
 
 .page-footer__copyright-img {
-  padding-top: 8px;
+  width: 116px;
+  height: 40px;
+}
+
+.page-footer__copyright-text {
+  margin-top: 8px;
+  margin-right: 7px;
 }
 
 .filter {
