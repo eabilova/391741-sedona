@@ -111,7 +111,7 @@ body {
   height: 508px;
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-position: 0 -58px;
+  background-position: 0 -55px;
   z-index: 0;
   display: flex;
   flex-flow: column;
@@ -521,6 +521,7 @@ body {
 }
 
 .page-footer__hashtag {
+  display: flex;
   max-width: 40%;
   text-align: left;
   font-size: 21px;
@@ -531,11 +532,10 @@ body {
 }
 
 .page-footer__social-list {
-  margin: 0 auto;
+  display: flex;
+  margin: 0 223px 0 250px;
   padding: 0;
   padding: 32px 0 35px 2px;
-  display: flex;
-  justify-content: flex-start;
   list-style: none;
   max-width: 20%;
 }
@@ -578,8 +578,8 @@ body {
   align-content: center;
   max-width: 40%;
   padding: 0;
-  margin-right: 101px;
-  margin-bottom: 5px;
+  margin-right: 99px;
+  margin-top: 5px;
 }
 
 .page-footer__copyright-link {
@@ -604,7 +604,7 @@ body {
 
 .page-footer__copyright-text {
   margin-top: 8px;
-  margin-right: 7px;
+  margin-right: 9px;
 }
 
 .filter {
