@@ -437,7 +437,7 @@ body {
 }
 
 .search-form__fieldset_half-width:nth-child(1) .search-form__label {
-  margin-right: 32px;
+  margin-right: 38px;
 }
 
 .search-form__fieldset_half-width:nth-child(2) .search-form__label {
@@ -446,13 +446,12 @@ body {
 }
 
 .search-form__fieldset_half-width:nth-child(1) {
-  margin-left: 14px;
+  margin-left: 16px;
 }
 
 .search-form__num-button {
   margin: 0;
   width: 38px;
-  padding: 1px 13px 1px 13px;
   font-size: 25px;
   font-weight: 700;
   line-height: 32px;
